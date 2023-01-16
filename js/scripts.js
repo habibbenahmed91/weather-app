@@ -11,7 +11,7 @@ function getData(apiUrl) {
       if (this.readyState === 4 && this.status === 200) {
         resolve(JSON.parse(this.responseText));
       } else {
-        reject(Error("Ther Is No Data To Show!"));
+        reject(Error("Ther Are No Data To Show!"));
       }
     };
     request.open("GET", apiUrl);
