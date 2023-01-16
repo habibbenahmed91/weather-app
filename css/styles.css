@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  padding: 0 15px;
+  background: linear-gradient(to bottom, #86878a 0%, #5a9f94 100%);
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  width: 500px;
+  max-width: 100%;
+  margin: 15px auto;
+  padding: 30px;
+  background-color: #355853;
+  border-radius: 6px;
+}
+.weather-form input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+}
+.weather-form input:focus {
+  outline: none;
+}
+.weather-form input[type="text"] {
+  margin-bottom: 15px;
+  background-color: #eee;
+}
+.weather-form input[type="submit"] {
+  background-color: #111;
+  color: white;
+  cursor: pointer;
+}
+.weather-data {
+  margin-top: 5px;
+}
+.weather-data span {
+  display: block;
+  padding: 15px 2px;
+  letter-spacing: 1px;
+  color: #eee;
+}
+.weather-data span:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.weather-data span:last-child {
+  padding-bottom: 0;
+}
+.error {
+  padding: 10px;
+  margin-top: 15px;
+  background: red;
+  border-radius: 6px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #eee;
+}
